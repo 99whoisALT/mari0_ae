@@ -6,6 +6,12 @@ on:
       - 'v*'  # Triggers on version tags, e.g., v1.0, v1.1.0
 
 jobs:
+  test:
+    name: Does nothing
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "michael"
+      
   create-release:
     name: Create GitHub Release
     runs-on: ubuntu-latest
